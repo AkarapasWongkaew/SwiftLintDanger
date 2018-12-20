@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42266E508E1AB64F339B30AD /* Pods_SwiftLintDanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF007E1335E1D1CB514ECE4 /* Pods_SwiftLintDanger.framework */; };
 		B68B757C21CB7134000C8914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B757B21CB7134000C8914 /* AppDelegate.swift */; };
 		B68B757E21CB7134000C8914 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B757D21CB7134000C8914 /* ViewController.swift */; };
 		B68B758121CB7134000C8914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68B757F21CB7134000C8914 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		434FADFFF123553A836F118A /* Pods-SwiftLintDanger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLintDanger.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLintDanger/Pods-SwiftLintDanger.release.xcconfig"; sourceTree = "<group>"; };
 		B68B757821CB7134000C8914 /* SwiftLintDanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLintDanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68B757B21CB7134000C8914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B68B757D21CB7134000C8914 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		B68B758221CB7136000C8914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B68B758521CB7136000C8914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B68B758721CB7136000C8914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF007E1335E1D1CB514ECE4 /* Pods_SwiftLintDanger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLintDanger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE114883799DD87F8041D127 /* Pods-SwiftLintDanger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLintDanger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLintDanger/Pods-SwiftLintDanger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42266E508E1AB64F339B30AD /* Pods_SwiftLintDanger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				B68B757A21CB7134000C8914 /* SwiftLintDanger */,
 				B68B757921CB7134000C8914 /* Products */,
+				B8DD9FE92998B51E2EB18D8B /* Pods */,
+				F73104F146FD3BA82BF0292B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = SwiftLintDanger;
 			sourceTree = "<group>";
 		};
+		B8DD9FE92998B51E2EB18D8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE114883799DD87F8041D127 /* Pods-SwiftLintDanger.debug.xcconfig */,
+				434FADFFF123553A836F118A /* Pods-SwiftLintDanger.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F73104F146FD3BA82BF0292B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAF007E1335E1D1CB514ECE4 /* Pods_SwiftLintDanger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B68B758A21CB7136000C8914 /* Build configuration list for PBXNativeTarget "SwiftLintDanger" */;
 			buildPhases = (
+				0B40860E956DAC3293856252 /* [CP] Check Pods Manifest.lock */,
 				B68B757421CB7134000C8914 /* Sources */,
 				B68B757521CB7134000C8914 /* Frameworks */,
 				B68B757621CB7134000C8914 /* Resources */,
@@ -129,6 +154,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B40860E956DAC3293856252 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftLintDanger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B68B757421CB7134000C8914 /* Sources */ = {
@@ -280,9 +330,11 @@
 		};
 		B68B758B21CB7136000C8914 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE114883799DD87F8041D127 /* Pods-SwiftLintDanger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = R486P56SGU;
 				INFOPLIST_FILE = SwiftLintDanger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +342,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.20scoops.SwiftLintDanger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development *";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,9 +350,11 @@
 		};
 		B68B758C21CB7136000C8914 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 434FADFFF123553A836F118A /* Pods-SwiftLintDanger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = R486P56SGU;
 				INFOPLIST_FILE = SwiftLintDanger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +362,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.20scoops.SwiftLintDanger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development *";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
